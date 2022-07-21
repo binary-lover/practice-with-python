@@ -1,0 +1,15 @@
+#*****************LINEAR SEARCH***************
+def lenearSearch(l,el):
+    indx = 0
+    while indx <len(l):
+        if l[indx]==el:
+            return True, indx
+        indx+=1
+    return False,indx  
+    l = []
+found,indx = lenearSearch(l,el)
+found,indx = binarySearch(l,el)
+if found:
+    print(el, "Found at index ",indx)
+else:
+    print(el,"Not found...")
