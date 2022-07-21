@@ -1,0 +1,12 @@
+#****************INSERTION SORT****************
+li = [30,20,23,243,54,65,2,14,65,234,76,10]
+n = len(li)
+for i in range(1,n):
+    key = li[i]
+    j = i-1 
+    while j >=0 and li[j]>key:
+        li[j+1] =li[j]
+        j-=1
+    else:
+        li[j+1]=key
+print("List has been sorted: ",li)
