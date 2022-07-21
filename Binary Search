@@ -1,0 +1,24 @@
+#****************BINARY SEARCH*******************
+def binarySearch(l,el):
+    left,right = 0,len(l)
+    indx = 0
+    while indx <len(l)//2:
+        mid = (left+right)//2
+        if l[mid]==el:
+            return mid
+        elif l[mid]>el:
+            right = mid
+        else:
+            left = mid
+        indx+=1
+    return -1
+
+l = []
+for i in range(10000):
+    l.append(i)
+el = int(input("Enter the number to search"))
+indx = binarySearch(l,el)
+if indx >=0:
+    print(el, "Found at index ",indx)
+else:
+    print(el,"Not found...")
