@@ -1,0 +1,48 @@
+#*********************QUEUE DATA STRUCTURE********************
+def enQueue(q,elm):
+    q.append(elm)
+    print("Element inserted ")
+
+def deQueue(q):
+    if len(q) !=0:
+        q.pop(0)
+        print("Element removed")
+    else:
+        print("Queue is underflow")
+def peek(q):
+    if len(q) !=0:
+        print("Peek value is ", q[0])
+    else:
+        print("Queue is underflow")
+def display(q):
+    if q ==[]:
+        print("Queue is underflow")
+        return
+    for i in q:
+        print(i,end = " ")
+Queue = []
+while True:
+    print(
+        '''
+    ``````````QUEUE OPERATION``````````
+    1. Enqueue
+    2. Dequeue
+    3. Peek
+    4. Display
+    5. Exit
+    ''')
+    choice = int(input("Enter choice: "))
+    if choice == 1:
+        elm = int(input("Enter element to enqueue: "))
+        enQueue(Queue,elm)
+
+    if choice == 2:
+        deQueue(Queue)    
+    elif choice == 3:
+        peek(Queue)
+    elif choice == 4:
+        display(Queue)
+    elif choice == 5:
+        break
+    else:
+        print("Enter correct option")
