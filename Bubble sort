@@ -1,0 +1,7 @@
+#***************BUBBLE SORT ******************
+li = [5,4,7,1,8,34,34,654,75,324,575,856,345,86,56,864,456,865,347,876,965,344,2345] #Random list
+for i in range(len(li)):
+    for  j in range(len(li)-i-1):
+        if li[j]>li[j+1]:
+            li[j],li[j+1]=li[j+1],li[j]
+print("list has been sorted",li)
