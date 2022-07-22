@@ -1,0 +1,11 @@
+#****************SELECTION SORT***************
+li = [2,5,7,3,9,1]
+n = len(li)
+for i in range(n-1):
+    id = i
+    for j in range(i,n):
+        if li[j]<li[id]:
+            id =j
+    li[i],li[id]=li[id],li[i]
+    print(li)
+print("The list has been sorted: ",li)
