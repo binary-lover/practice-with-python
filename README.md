@@ -1,0 +1,3 @@
+# python-class-12
+In this series of python programs we will learn and practice on different programs that will help in logic building...
+based on class 12 
